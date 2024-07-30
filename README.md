@@ -205,6 +205,11 @@ This will create a file inside a `/database/seeds` (`/app/database/seeds` for La
 ```php
 <?php
 
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 // File: /database/seeds/UsersTableSeeder.php
 
 class UsersTableSeeder extends Seeder {
@@ -264,6 +269,11 @@ If you wish you can define custom iSeed template in which all the calls will be 
 
 ```php
 <?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 // File: /database/seeds/DatabaseSeeder.php
 class DatabaseSeeder extends Seeder {
