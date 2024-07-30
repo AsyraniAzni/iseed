@@ -114,7 +114,11 @@ class Iseed
         }
 
         // Update the DatabaseSeeder.php file
-        return $this->updateDatabaseSeederRunMethod($className) !== false;
+        if ($seeded) {
+            return $this->updateDatabaseSeederRunMethod($className) !== false;
+        } else {
+            return true;
+        }
     }
 
     /**

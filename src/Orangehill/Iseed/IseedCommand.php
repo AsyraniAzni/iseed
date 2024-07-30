@@ -135,7 +135,8 @@ class IseedCommand extends Command
                         $indexed,
                         $orderBy,
                         $direction,
-                        $where
+                        $where,
+                        $seeded
                     ),
                     $table
                 );
@@ -180,6 +181,7 @@ class IseedCommand extends Command
             array('classnameprefix', null, InputOption::VALUE_OPTIONAL, 'prefix for class and file name', null),
             array('classnamesuffix', null, InputOption::VALUE_OPTIONAL, 'suffix for class and file name', null),
             array('where', null, InputOption::VALUE_OPTIONAL, 'raw sql where condition', null),
+            array('noseed', null, InputOption::VALUE_OPTIONAL, 'exclude newly generated seeder file from the DatabaseSeeder.php', null),
         );
     }
 
