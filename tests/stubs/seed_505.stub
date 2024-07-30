@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class test_class extends Seeder
 {
@@ -16,9 +17,9 @@ class test_class extends Seeder
     {
         
 
-        \DB::table('test_table')->delete();
+        DB::table('test_table')->delete();
         
-        \DB::table('test_table')->insert(array (
+        DB::table('test_table')->insert(array (
             0 => 
             array (
                 'id' => '1',
@@ -2520,7 +2521,7 @@ class test_class extends Seeder
                 'time' => '2013-10-18 14:31:24',
             ),
         ));
-        \DB::table('test_table')->insert(array (
+        DB::table('test_table')->insert(array (
             0 => 
             array (
                 'id' => '501',
