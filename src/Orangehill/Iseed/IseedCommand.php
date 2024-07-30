@@ -110,7 +110,7 @@ class IseedCommand extends Command
                         $indexed,
                         $orderBy,
                         $direction,
-                        $where
+                        $where,
                         $seeded
                     ),
                     $table
