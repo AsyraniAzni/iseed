@@ -67,6 +67,7 @@ class IseedCommand extends Command
         $prefix = $this->option('classnameprefix');
         $suffix = $this->option('classnamesuffix');
         $where = $this->option('where');
+        $seeded = !$this->option('noseed');
 
         if ($max < 1) {
             $max = null;
@@ -110,6 +111,7 @@ class IseedCommand extends Command
                         $orderBy,
                         $direction,
                         $where
+                        $seeded
                     ),
                     $table
                 );
